@@ -1,0 +1,139 @@
+header {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    transition: top 0.3s ease;
+}
+.header_title {
+    color: white;
+    cursor: pointer;
+    margin-left: 5rem;
+}
+.header_title:hover {
+    color: #f2aa4cff;
+    transition: ease-in-out 0.3s;
+}
+
+.buttonDownload {
+    display: inline-block;
+    position: absolute;
+    padding: 10px 25px;
+    background-color: white;
+    color: black;
+    font-family: sans-serif;
+    text-decoration: none;
+    font-size: 0.9em;
+    text-align: center;
+    text-indent: 15px;
+    border: none;
+    right: 3rem;
+    cursor: pointer;
+    border-radius: 5px;
+   }
+   
+   .buttonDownload:hover {
+    background-color: #f2aa4cff;
+    color: black;
+    transition: ease-in-out 0.3s;
+   }
+   
+   .buttonDownload:before, .buttonDownload:after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 15px;
+    top: 52%;
+   }
+   
+   .buttonDownload:before {
+    width: 10px;
+    height: 2px;
+    border-style: solid;
+    border-width: 0 2px 2px;
+   }
+   
+   .buttonDownload:after {
+    width: 0;
+    height: 0;
+    margin-left: 3px;
+    margin-top: -7px;
+    border-style: solid;
+    border-width: 4px 4px 0 4px;
+    border-color: transparent;
+    border-top-color: inherit;
+    animation: downloadArrow 1s linear infinite;
+    animation-play-state: paused;
+   }
+   
+   .buttonDownload:hover:before {
+    border-color: black;
+   }
+   
+   .buttonDownload:hover:after {
+    border-top-color: black;
+    animation-play-state: running;
+   }
+   
+   @keyframes downloadArrow {
+    0% {
+     margin-top: -7px;
+     opacity: 1;
+    }
+   
+    0.001% {
+     margin-top: -15px;
+     opacity: 0.4;
+    }
+   
+    50% {
+     opacity: 1;
+    }
+   
+    100% {
+     margin-top: 0;
+     opacity: 0.4;
+    }
+   }
+
+   .header_link {
+    background-image: linear-gradient(
+      to right,
+      #f2aa4cff,
+      #f2aa4cff 50%,
+      #ffffff 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    font-weight: 550;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .header_link:before{
+    content: '';
+    background: #f2aa4cff;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .header_link:hover {
+   background-position: 0;
+  }
+  
+  .header_link:hover::before{
+    width: 100%;
+  }

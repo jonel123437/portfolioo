@@ -1,0 +1,124 @@
+#about {
+    display: flex;
+    justify-content: center;
+    padding-top: 9.5rem;
+    background-color: #fff3f3;
+    padding-bottom: 15rem;
+}
+.about_container {
+    display: flex;
+    text-align: center;
+    gap: 8rem;
+}
+.about_profile {
+    border-radius: 50px;
+}
+.about_container1 {
+    width: 40rem;
+    text-align: left;
+}
+
+.progress-container {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+.progress-label {
+    margin-bottom: 5px;
+}
+.progress-bar {
+    width: 70%;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.progress-bar-inner {
+    height: 25px;
+    border-radius: 5px;
+    text-align: right;
+    padding-right: 10px;
+    line-height: 25px;
+    color: black;
+}
+.frontend {
+    width: 80%;
+    background-color: #f2aa4cff;
+}
+.backend {
+    width: 80%;
+    background-color: #f2aa4cff;
+}
+.design {
+    width: 70%;
+    background-color: #f2aa4cff;
+}
+
+.moreabout {
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-top: 3rem;
+  }
+  
+  .moreabout {
+    --primary-color: #111;
+    --hovered-color: #f2aa4cff;
+    position: relative;
+    display: flex;
+    font-weight: 600;
+    font-size: 20px;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  
+  .moreabout p {
+    margin: 0;
+    position: relative;
+    font-size: 20px;
+    color: var(--primary-color);
+  }
+  
+  .moreabout::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    left: 0;
+    bottom: -7px;
+    background: var(--hovered-color);
+    height: 2px;
+    transition: 0.3s ease-out;
+  }
+  
+  .moreabout p::before {
+    position: absolute;
+    content: "More";
+    width: 0%;
+    inset: 0;
+    color: var(--hovered-color);
+    overflow: hidden;
+    transition: 0.3s ease-out;
+  }
+  
+  .moreabout:hover::after {
+    width: 100%;
+  }
+  
+  .moreabout:hover p::before {
+    width: 100%;
+  }
+  
+  .moreabout:hover svg {
+    transform: translateX(4px);
+    color: var(--hovered-color);
+  }
+  
+  .moreabout svg {
+    color: var(--primary-color);
+    transition: 0.2s;
+    position: relative;
+    width: 15px;
+    transition-delay: 0.2s;
+  }
+  
