@@ -3,7 +3,6 @@
     justify-content: center;
     padding-top: 10rem;
     margin-top: -1rem;
-    background-color: #212121;
     padding-bottom: 17rem;
 }
 
@@ -24,10 +23,10 @@
     font-size: 7rem;
     letter-spacing: 5px;
     font-weight: 600;
-    color: white;
+    color: var(--clr-slate400);
 }
 .group1 div {
-  color: #f2aa4cff;
+  color: var(--clr-slate600);
   font-size: 2rem;
 }
 
@@ -43,8 +42,9 @@
     font-size: 16px;
     border-radius: 100px;
     font-weight: 600;
-    color: #1f387e;
-    box-shadow: 0 0 0 2px #ffffff;
+    color: var(--clr-light);
+    box-shadow: 0 0 0 2px var(--clr-rose);
+    background-color: var(--clr-rose);
     cursor: pointer;
     overflow: hidden;
     transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
@@ -53,7 +53,7 @@
   .animated-button svg {
     position: absolute;
     width: 24px;
-    fill: #1f387e;
+    fill: var(--clr-light);
     z-index: 9;
     transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
   }
@@ -73,7 +73,7 @@
     transform: translate(-50%, -50%);
     width: 20px;
     height: 20px;
-    background-color: #c5e5e4;
+    background-color: var(--clr-rose);
     border-radius: 50%;
     opacity: 0;
     transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
@@ -88,7 +88,7 @@
   
   .animated-button:hover {
     box-shadow: 0 0 0 12px transparent;
-    color: #212121;
+    color: var(--clr-light);
     border-radius: 12px;
   }
   
@@ -105,12 +105,12 @@
   }
   
   .animated-button:hover svg {
-    fill: #1f387e;
+    fill: var(--clr-light);
   }
   
   .animated-button:active {
     scale: 0.95;
-    box-shadow: 0 0 0 4px greenyellow;
+    box-shadow: 0 0 0 4px var(--clr-rose);
   }
   
   .animated-button:hover .circle {
@@ -125,7 +125,7 @@
     height: 25rem;
     width: 25rem;
     transition: transform 0.1s ease-out;
-    border: 5px solid #f2aa4cff;
+    border: 5px solid var(--clr-rose);
     padding: 1rem;
   }
     
@@ -133,7 +133,6 @@
   .text1 {
     width: 450px;
     height: 40px;
-    margin-top: -4rem;
   }
   
   p {
@@ -171,22 +170,22 @@
   }
   
   .wisteria {
-    color: #8e44ad;
+    color: var(--clr-indigo);
   }
   
   .belize {
-    color: #2980b9;
+    color: var(--clr-indigo);
   }
   
   .pomegranate {
-    color: #c0392b;
+    color: var(--clr-indigo);
   }
   
   .green {
-    color: #16a085;
+    color: var(--clr-indigo);
   }
   
   .midnight {
-    color: #2c3e50;
+    color: var(--clr-indigo);
   }
 

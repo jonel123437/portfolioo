@@ -1,8 +1,8 @@
 #project {
     padding-top: 5rem;
     padding-bottom: 10rem;
-    background-color: #fff3f3;
     display: flex;
+    background-color: var(--clr-light);
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -50,7 +50,7 @@
 
 .project_content h1 {
     font-size: 42px;
-    color: #f2aa4cff;
+    color: var(--clr-rose);
     margin-bottom: 10px;
 }
 
@@ -65,4 +65,7 @@
 }
 .project_content:hover > * {
     transform: translateY(0px);
+}
+.project_img img {
+    width: 26rem;
 }

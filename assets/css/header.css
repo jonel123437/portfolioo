@@ -1,21 +1,23 @@
 header {
     display: flex;
     align-items: center;
-    background-color: black;
-    color: white;
+    background-color: var(--clr-dark);
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 100;
     transition: top 0.3s ease;
 }
+#header {
+  padding: 1rem;
+}
 .header_title {
-    color: white;
+    color: var(--clr-slate600);
     cursor: pointer;
     margin-left: 5rem;
 }
 .header_title:hover {
-    color: #f2aa4cff;
+    color: var(--clr-rose);
     transition: ease-in-out 0.3s;
 }
 
@@ -23,8 +25,8 @@ header {
     display: inline-block;
     position: absolute;
     padding: 10px 25px;
-    background-color: white;
-    color: black;
+    background-color: var(--clr-rose);
+    color: var(--clr-light);
     font-family: sans-serif;
     text-decoration: none;
     font-size: 0.9em;
@@ -37,9 +39,9 @@ header {
    }
    
    .buttonDownload:hover {
-    background-color: #f2aa4cff;
-    color: black;
-    transition: ease-in-out 0.3s;
+      background-color: var(--clr-rose);
+      color: var(--clr-light);
+      transition: ease-in-out 0.3s;
    }
    
    .buttonDownload:before, .buttonDownload:after {
@@ -71,11 +73,11 @@ header {
    }
    
    .buttonDownload:hover:before {
-    border-color: black;
+    border-color: var(--clr-light);
    }
    
    .buttonDownload:hover:after {
-    border-top-color: black;
+    border-top-color: var(--clr-light);
     animation-play-state: running;
    }
    
@@ -103,9 +105,9 @@ header {
    .header_link {
     background-image: linear-gradient(
       to right,
-      #f2aa4cff,
-      #f2aa4cff 50%,
-      #ffffff 50%
+      var(--clr-rose),
+      var(--clr-rose) 50%,
+      var(--clr-slate600) 50%
     );
     background-size: 200% 100%;
     background-position: -100%;
@@ -120,7 +122,7 @@ header {
   
   .header_link:before{
     content: '';
-    background: #f2aa4cff;
+    background: var(--clr-rose);
     display: block;
     position: absolute;
     bottom: -3px;

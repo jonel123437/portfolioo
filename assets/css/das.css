@@ -2,10 +2,11 @@
     text-align: center;
     padding-top: 5rem;
     padding-bottom: 10rem;
-    background-color: #fff3f3;
+    background-color: var(--clr-light);
 }
 
 .excelsheet {
     height: 50rem;
     width: 75rem;
+    margin-top: 2rem;
 }

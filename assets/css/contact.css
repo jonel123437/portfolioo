@@ -1,10 +1,18 @@
 #contact {
     text-align: center;
     padding-bottom: 20rem;
-    background-color: rgb(28, 28, 28);
     margin-top: -2rem;
-    color: white;
+    color: var(--clr-light);
     padding-top: 5rem;
+}
+
+.contact_ul {
+  margin-top: 4rem;
+}
+
+#contact div {
+  color: var(--clr-slate600);
+  margin-top: 2rem;
 }
 
 .contact_ul li {
@@ -18,10 +26,10 @@
     height: 60px;
     text-align: center;
     line-height: 63px;
-    background: #333;
+    background: var(--clr-slate800);
     border-radius: 50%;
     font-size: 30px;
-    color: #666;
+    color: var(--clr-slate600);
     transition: .5s;
   }
   
@@ -33,7 +41,7 @@
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background: #f2aa4cff;
+    background: var(--clr-rose);
     transition: .5s;
     transform: scale(.9);
     z-index: -1;
@@ -41,13 +49,13 @@
   
   .contact_ul li a:hover::before {
     transform: scale(1.1);
-    box-shadow: 0 0 15px #f2aa4cff;
+    box-shadow: 0 0 15px var(--clr-rose);
   }
   
   .contact_ul li a:hover {
-    color: #f2aa4cff;
-    box-shadow: 0 0 5px #f2aa4cff;
-    text-shadow: 0 0 5px #f2aa4cff;
+    color: var(--clr-rose);
+    box-shadow: 0 0 5px var(--clr-rose);
+    text-shadow: 0 0 5px var(--clr-rose);
   }
 
   .fab, .fas {
