@@ -6,6 +6,9 @@
 }
 
 .excelsheet {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
     height: 50rem;
     width: 75rem;
     margin-top: 2rem;
