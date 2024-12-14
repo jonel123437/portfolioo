@@ -1,4 +1,4 @@
-@media screen and (max-width: 600px){
+@media screen and (max-width: 500px){
     .nav, 
     .buttonDownload {
         display: none;
@@ -11,24 +11,33 @@
     }
     .about_container {
         display: block;
-        text-align: left;
+    }
+    #about {
+        margin-left: 5rem;
     }
     .about_container1 {
-        width: 25rem;
+        width: 20rem;
         margin-top: 3rem;
     }
     .about_profile {
-        height: 15rem;
-        width: 15rem;
+        height: 10rem;
+        width: 10rem;
     }
     .asdafv {
         display: grid;
         grid-template-columns: repeat(2, 1fr); 
         gap: 10px;
         margin-top: 1rem;
+        font-size: 0.5rem;
     }
     .asdafv div {
-        width: 13rem;
-        height: 15rem;
+        width: 8rem;
+        height: 11rem;
+    }
+    .box_img {
+        height: 3rem;
+    }
+    #skills {
+        text-align: center;
     }
 }
