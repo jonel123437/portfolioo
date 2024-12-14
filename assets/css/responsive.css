@@ -1,0 +1,16 @@
+@media screen and (max-width: 600px){
+    .nav, 
+    .buttonDownload {
+        display: none;
+    }
+    .header_title {
+        margin-left: -1px;
+    }
+    #hero {
+        text-align: center;
+    }
+    .project_wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
