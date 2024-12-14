@@ -11,6 +11,11 @@
 }
 .about_profile {
     border-radius: 50px;
+    height: 30rem;
+    width: 17rem;
+    border-bottom: 1px solid var(--clr-rose);
+    border-top: 1px solid var(--clr-rose);
+
 }
 .about_container1 {
     width: 40rem;

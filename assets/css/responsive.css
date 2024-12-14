@@ -18,12 +18,12 @@
         text-align: center;
     }
     .about_container1 {
-        width: 250px;
+        width: 300px;
         margin-top: 3rem;
     }
     .about_profile {
-        height: 10rem;
-        width: 10rem;
+        height: 20rem;
+        width: 12rem;
     }
     .asdafv {
         display: grid;
@@ -60,5 +60,8 @@
     }
     .header_title {
         font-size: 1.5rem;
+    }
+    .progress-bar {
+        width: 100%;
     }
 }
