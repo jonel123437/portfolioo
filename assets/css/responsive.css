@@ -13,7 +13,7 @@
         display: block;
     }
     #about {
-        margin-left: 5rem;
+        text-align: center;
     }
     .about_container1 {
         width: 20rem;
@@ -28,11 +28,11 @@
         grid-template-columns: repeat(2, 1fr); 
         gap: 10px;
         margin-top: 1rem;
-        font-size: 0.5rem;
+        font-size: 0.8rem;
     }
     .asdafv div {
-        width: 8rem;
-        height: 11rem;
+        width: 10rem;
+        height: 12rem;
     }
     .box_img {
         height: 3rem;
