@@ -40,3 +40,10 @@
     padding-bottom: 2rem;
     margin-top: 2.5rem;
 }
+
+.asdafv {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 10px;
+    margin-top: 1rem;
+}

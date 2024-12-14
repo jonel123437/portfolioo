@@ -9,4 +9,26 @@
     #hero {
         text-align: center;
     }
+    .about_container {
+        display: block;
+        text-align: left;
+    }
+    .about_container1 {
+        width: 25rem;
+        margin-top: 3rem;
+    }
+    .about_profile {
+        height: 15rem;
+        width: 15rem;
+    }
+    .asdafv {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 10px;
+        margin-top: 1rem;
+    }
+    .asdafv div {
+        width: 13rem;
+        height: 15rem;
+    }
 }
