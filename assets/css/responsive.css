@@ -64,4 +64,14 @@
     .progress-bar {
         width: 100%;
     }
+    .col .contents .experience_box {
+        padding: 7px;
+    }
+    .project_img {
+        width: 20rem;
+    }
+    .project_img img {
+        width: 100%;
+        height: 15rem;
+    }
 }
