@@ -1,33 +1,25 @@
 #hero {
-    display: flex;
-    justify-content: center;
-    padding-top: 10rem;
-    margin-top: -1rem;
-    padding-bottom: 17rem;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--clr-slate600);
+  height: 100vh;
 }
 
-.hero_container {
-    display: flex;
-    gap: 13rem;
+.jonel {
+  font-size: 8rem;
 }
-.aboutme {
-    color: black;
-    background-color: #f2aa4cff;
-    padding: 10px 20px;
-    border-radius: 5px;
+
+.hello {
+  font-size: 3rem;
+  color: var(--clr-indigo);
 }
-.aboutme:hover {
-    text-decoration: none;
-}
-.group1 h1 {
-    font-size: 7rem;
-    letter-spacing: 5px;
-    font-weight: 600;
-    color: var(--clr-slate400);
-}
-.group1 div {
-  color: var(--clr-slate600);
-  font-size: 2rem;
+
+.asdasd {
+  display: flex;
+  justify-content: center;
 }
 
 .animated-button {
@@ -132,7 +124,7 @@
     
   @import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
   .text1 {
-    width: 450px;
+    font-size: 2rem;
     height: 40px;
   }
   
@@ -144,8 +136,8 @@
   
   .word {
     position: absolute;
-    width: 450px;
-    opacity: 0;
+    left: 50%;
+    transform: translate(-50%);
   }
   
   .letter {

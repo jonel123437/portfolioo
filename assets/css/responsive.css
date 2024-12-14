@@ -11,12 +11,14 @@
     }
     .about_container {
         display: block;
+        text-align: center;
+        padding: 10px;
     }
     #about {
         text-align: center;
     }
     .about_container1 {
-        width: 20rem;
+        width: 250px;
         margin-top: 3rem;
     }
     .about_profile {
@@ -39,5 +41,21 @@
     }
     #skills {
         text-align: center;
+    }
+    #hero {
+        text-align: center;
+    }
+    .hello {
+        font-size: 1.5rem;
+    }
+    .jonel {
+        font-size: 4rem;
+    }
+    .pp {
+        font-size: 1.2rem;
+    }
+    .animated-button {
+        font-size: 10px;
+        padding: 5px 30px;
     }
 }
