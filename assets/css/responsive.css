@@ -9,8 +9,4 @@
     #hero {
         text-align: center;
     }
-    .project_wrapper {
-        display: flex;
-        flex-wrap: wrap;
-    }
 }

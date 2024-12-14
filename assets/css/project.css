@@ -16,6 +16,7 @@
     align-items: center;
     margin-top: 75px;
     gap: 2rem;
+    flex-wrap: wrap;
 }
 
 .project_img {
