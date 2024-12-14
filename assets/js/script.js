@@ -107,3 +107,28 @@ function topFunction() {
     document.documentElement.scrollTop = 0;
 }
 
+function myFunction(x) {
+    x.classList.toggle("change");
+    const menu = document.querySelector('.cvcf');
+    // Toggle the display property
+    if (menu.style.display === 'block') {
+        menu.style.display = 'none';
+    } else {
+        menu.style.display = 'block';
+    }
+}
+
+function closeMenu() {
+    const menu = document.querySelector('.cvcf');
+    menu.style.display = 'none';
+}
+
+
+// Close the menu if the user clicks outside of it
+window.onclick = function(event) {
+    const menu = document.querySelector('.cvcf');
+    const hamburger = document.querySelector('.cvfdg');
+    if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
+        menu.style.display = 'none';
+    }
+}

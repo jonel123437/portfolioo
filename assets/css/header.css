@@ -139,3 +139,51 @@ header {
   .header_link:hover::before{
     width: 100%;
   }
+
+  .cvfdg {
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    right: 3rem;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  /* Rotate first bar */
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  /* Fade out the second bar */
+  .change .bar2 {opacity: 0;}
+  
+  /* Rotate last bar */
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+
+  .cvcf {
+    background-color: var(--clr-light);
+    position: fixed;
+    right: 1rem;
+    padding: 10px;
+    border-radius: 15px;
+    margin-top: 5rem;
+    cursor: pointer;
+    display: none;
+  }
+
+  .cvfdg {
+    display: none;
+  }
+  
+
+  .cvcf li a {
+    color: var(--clr-slate600);
+  }
