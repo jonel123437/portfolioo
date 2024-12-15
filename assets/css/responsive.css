@@ -106,4 +106,7 @@
     .cvfdg {
         display: block;
     }
+    #menu {
+        display: none;
+    }
 }
