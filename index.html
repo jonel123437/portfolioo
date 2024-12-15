@@ -28,20 +28,20 @@
             </ul>
             <button class="buttonDownload" onclick="window.open('https://drive.google.com/file/d/1o51_olHQjx-q-qmAjYLtlNk8GC9fwl3i/view', '_blank')">Resume</button>
             
-            <div class="cvfdg" onclick="myFunction(this)">
+            <div class="cvfdg" onclick="toggleMenu()">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
                 <div class="bar3"></div>
             </div>
         </header>
 
-        <div class="cvcf">
-            <li><a class="header_link" href="javascript:void(0)" onclick="goUp()">HOME</a></li>
-            <li><a class="header_link" href="#about">ABOUT</a></li>
-            <li><a class="header_link" href="#experience">EXPERIENCE</a></li>
-            <li><a class="header_link" href="#das">DAS</a></li>
-            <li><a class="header_link" href="#contact">CONTACT</a></li>
-            <button class="sdfv" onclick="window.open('https://drive.google.com/file/d/1o51_olHQjx-q-qmAjYLtlNk8GC9fwl3i/view', '_blank')">Resume</button>
+        <div class="cvcf" id="menu">
+            <li><a class="header_link" href="javascript:void(0)" onclick="goUp(); closeMenu()">HOME</a></li>
+            <li><a class="header_link" href="#about" onclick="closeMenu()">ABOUT</a></li>
+            <li><a class="header_link" href="#experience" onclick="closeMenu()">EXPERIENCE</a></li>
+            <li><a class="header_link" href="#das" onclick="closeMenu()">DAS</a></li>
+            <li><a class="header_link" href="#contact" onclick="closeMenu()">CONTACT</a></li>
+            <button class="nsjdf" onclick="window.open('https://drive.google.com/file/d/1o51_olHQjx-q-qmAjYLtlNk8GC9fwl3i/view', '_blank')">Resume</button>
         </div>
         
         <button onclick="topFunction()" id="myBtn" title="Go to top">🡅</button>
@@ -333,7 +333,7 @@
 
         <div id="contact">
             <h1>CONTACT</h1>
-            <div style="font-size: 1.2rem;">If you have any inquiries, collaborations, or just want to say hello, feel free to reach out. <br>I'm always open to connecting with new people and exploring exciting opportunities. <br>Let's chat and make something awesome together!</div>
+            <div style="font-size: 1.2rem;">If you have any inquiries, collaborations, or just want to say hello, feel free to reach out. I'm always open to connecting with new people and exploring exciting opportunities. Let's chat and make something awesome together!</div>
             <ul class="contact_ul">
                 <!-- <li>
                   <a href="#">

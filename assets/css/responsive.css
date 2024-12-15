@@ -88,11 +88,22 @@
         align-items: center;
         width: 18rem;
     }
-    .cvfdg {
-        display: block;
-        z-index: 9999;
+    #myBtn {
+        display: none;
     }
-    .sdfv {
+    #contact div{
+        width: 20rem;
+        text-align: justify;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .contact_ul {
+        margin-top: 15rem;
+        padding: 0;
+        gap: 20px;
+    }
+    .cvfdg {
         display: block;
     }
 }

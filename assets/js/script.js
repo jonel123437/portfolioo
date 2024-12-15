@@ -89,15 +89,17 @@ setInterval(changeWord, 4000);
 
 // Get the button
 let mybutton = document.getElementById("myBtn");
-    
+
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () { scrollFunction(); };
 
 function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
-    } else {
-        mybutton.style.display = "none";
+    if (window.innerWidth > 500) { // Only apply scroll behavior for larger screens
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
     }
 }
 
@@ -107,28 +109,29 @@ function topFunction() {
     document.documentElement.scrollTop = 0;
 }
 
-function myFunction(x) {
-    x.classList.toggle("change");
-    const menu = document.querySelector('.cvcf');
-    // Toggle the display property
-    if (menu.style.display === 'block') {
-        menu.style.display = 'none';
-    } else {
-        menu.style.display = 'block';
+
+function toggleMenu() {
+    const menu = document.getElementById('menu');
+    const isVisible = menu.style.display === 'block';
+    menu.style.display = isVisible ? 'none' : 'block';
+
+    // Add event listener to close the menu if clicking outside
+    if (!isVisible) {
+        document.addEventListener('click', handleOutsideClick);
     }
 }
 
 function closeMenu() {
-    const menu = document.querySelector('.cvcf');
+    const menu = document.getElementById('menu');
     menu.style.display = 'none';
+    document.removeEventListener('click', handleOutsideClick); // Cleanup event listener
 }
 
+function handleOutsideClick(event) {
+    const menu = document.getElementById('menu');
+    const toggleButton = document.querySelector('.cvfdg');
 
-// Close the menu if the user clicks outside of it
-window.onclick = function(event) {
-    const menu = document.querySelector('.cvcf');
-    const hamburger = document.querySelector('.cvfdg');
-    if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
-        menu.style.display = 'none';
+    if (!menu.contains(event.target) && !toggleButton.contains(event.target)) {
+        closeMenu();
     }
 }
