@@ -181,3 +181,7 @@ header {
     right: 3rem;
     display: none;
   }
+
+  #menu {
+    display: none;
+  }
